@@ -1,0 +1,466 @@
+/* Generated on 2016-07-26
+===============================================================================
+      P I C   T D D   R E A D Y   R E G I S T E R   D E F I N I T I O N
+===============================================================================
+
+Created by Tibor Simon - tiborsimon.io
+Generator script:  https://github.com/tiborsimon/pic-definition-converter
+
+Based on the register definition header file v1.37 provided by Microchip.
+Original definition date and license: */
+
+// Generated 11/03/2016 GMT
+
+/*
+* Copyright © 2016, Microchip Technology Inc. and its subsidiaries ("Microchip")
+* All rights reserved.
+*
+* This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+*
+* Redistribution and use in source and binary forms, with or without modification, are
+* permitted provided that the following conditions are met:
+*
+*     1. Redistributions of source code must retain the above copyright notice, this list of
+*        conditions and the following disclaimer.
+*
+*     2. Redistributions in binary form must reproduce the above copyright notice, this list
+*        of conditions and the following disclaimer in the documentation and/or other
+*        materials provided with the distribution.
+*
+*     3. Microchip's name may not be used to endorse or promote products derived from this
+*        software without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+* INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+* PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+* INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+* PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+* INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+* THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*  */
+
+#ifndef _PIC16C924_H_
+#define _PIC16C924_H_
+
+#define STATUS                        0
+#define C                             1
+#define CARRY                         2
+#define DC                            3
+#define ZERO                          4
+#define Z                             5
+#define nPD                           6
+#define nTO                           7
+#define RP0                           8
+#define RP                            9
+#define RP1                           10
+#define IRP                           11
+#define PORTA                         12
+#define RA0                           13
+#define RA1                           14
+#define RA2                           15
+#define RA3                           16
+#define RA4                           17
+#define RA5                           18
+#define PORTB                         19
+#define RB0                           20
+#define RB1                           21
+#define RB2                           22
+#define RB3                           23
+#define RB4                           24
+#define RB5                           25
+#define RB6                           26
+#define RB7                           27
+#define PORTC                         28
+#define RC0                           29
+#define RC1                           30
+#define RC2                           31
+#define RC3                           32
+#define RC4                           33
+#define RC5                           34
+#define PORTD                         35
+#define RD0                           36
+#define RD1                           37
+#define RD2                           38
+#define RD3                           39
+#define RD4                           40
+#define RD5                           41
+#define RD6                           42
+#define RD7                           43
+#define PORTE                         44
+#define RE0                           45
+#define RE1                           46
+#define RE2                           47
+#define RE3                           48
+#define RE4                           49
+#define RE5                           50
+#define RE6                           51
+#define RE7                           52
+#define INTCON                        53
+#define RBIF                          54
+#define INTF                          55
+#define T0IF                          56
+#define TMR0IF                        57
+#define RBIE                          58
+#define INTE                          59
+#define T0IE                          60
+#define TMR0IE                        61
+#define PEIE                          62
+#define GIE                           63
+#define PIR1                          64
+#define TMR1IF                        65
+#define TMR2IF                        66
+#define CCP1IF                        67
+#define SSPIF                         68
+#define ADIF                          69
+#define LCDIF                         70
+#define T1CON                         71
+#define TMR1ON                        72
+#define TMR1CS                        73
+#define nT1SYNC                       74
+#define T1INSYNC                      75
+#define T1OSCEN                       76
+#define T1CKPS0                       77
+#define T1CKPS                        78
+#define T1CKPS1                       79
+#define T2CON                         80
+#define T2CKPS0                       81
+#define T2CKPS                        82
+#define T2CKPS1                       83
+#define TMR2ON                        84
+#define TOUTPS0                       85
+#define TOUTPS                        86
+#define TOUTPS1                       87
+#define TOUTPS2                       88
+#define TOUTPS3                       89
+#define SSPCON                        90
+#define SSPM0                         91
+#define SSPM                          92
+#define SSPM1                         93
+#define SSPM2                         94
+#define SSPM3                         95
+#define CKP                           96
+#define SSPEN                         97
+#define SSPOV                         98
+#define WCOL                          99
+#define CCP1CON                       100
+#define CCP1M0                        101
+#define CCP1M                         102
+#define CCP1M1                        103
+#define CCP1M2                        104
+#define CCP1M3                        105
+#define CCP1Y                         106
+#define DC1B                          107
+#define CCP1X                         108
+#define ADCON0                        109
+#define ADON                          110
+#define nDONE                         111
+#define GO_nDONE                      112
+#define GO_DONE                       113
+#define GO                            114
+#define CHS                           115
+#define CHS0                          116
+#define CHS1                          117
+#define CHS2                          118
+#define ADCS                          119
+#define ADCS0                         120
+#define ADCS1                         121
+#define OPTION_REG                    122
+#define PS                            123
+#define PS0                           124
+#define PS1                           125
+#define PS2                           126
+#define PSA                           127
+#define T0SE                          128
+#define T0CS                          129
+#define INTEDG                        130
+#define nRBPU                         131
+#define TRISA                         132
+#define TRISA0                        133
+#define TRISA1                        134
+#define TRISA2                        135
+#define TRISA3                        136
+#define TRISA4                        137
+#define TRISA5                        138
+#define TRISB                         139
+#define TRISB0                        140
+#define TRISB1                        141
+#define TRISB2                        142
+#define TRISB3                        143
+#define TRISB4                        144
+#define TRISB5                        145
+#define TRISB6                        146
+#define TRISB7                        147
+#define TRISC                         148
+#define TRISC0                        149
+#define TRISC1                        150
+#define TRISC2                        151
+#define TRISC3                        152
+#define TRISC4                        153
+#define TRISC5                        154
+#define TRISD                         155
+#define TRISD0                        156
+#define TRISD1                        157
+#define TRISD2                        158
+#define TRISD3                        159
+#define TRISD4                        160
+#define TRISD5                        161
+#define TRISD6                        162
+#define TRISD7                        163
+#define TRISE                         164
+#define TRISE0                        165
+#define TRISE1                        166
+#define TRISE2                        167
+#define TRISE3                        168
+#define TRISE4                        169
+#define PSPMODE                       170
+#define TRISE5                        171
+#define IBOV                          172
+#define OBF                           173
+#define TRISE6                        174
+#define IBF                           175
+#define TRISE7                        176
+#define PIE1                          177
+#define TMR1IE                        178
+#define TMR2IE                        179
+#define CCP1IE                        180
+#define SSPIE                         181
+#define ADIE                          182
+#define LCDIE                         183
+#define PCON                          184
+#define nPOR                          185
+#define SSPSTAT                       186
+#define BF                            187
+#define UA                            188
+#define R_nW                          189
+#define READ_WRITE                    190
+#define I2C_READ                      191
+#define nW                            192
+#define R                             193
+#define nWRITE                        194
+#define R_W                           195
+#define S                             196
+#define I2C_START                     197
+#define I2C_STOP                      198
+#define P                             199
+#define nA                            200
+#define D_A                           201
+#define D_nA                          202
+#define D                             203
+#define DATA_ADDRESS                  204
+#define nADDRESS                      205
+#define I2C_DATA                      206
+#define CKE                           207
+#define SMP                           208
+#define ADCON1                        209
+#define PCFG0                         210
+#define PCFG                          211
+#define PCFG1                         212
+#define PCFG2                         213
+#define PORTF                         214
+#define RF0                           215
+#define RF1                           216
+#define RF2                           217
+#define RF3                           218
+#define RF4                           219
+#define RF5                           220
+#define RF6                           221
+#define RF7                           222
+#define PORTG                         223
+#define RG0                           224
+#define RG1                           225
+#define RG2                           226
+#define RG3                           227
+#define RG4                           228
+#define RG5                           229
+#define RG6                           230
+#define RG7                           231
+#define LCDSE                         232
+#define SE0                           233
+#define SE5                           234
+#define SE9                           235
+#define SE12                          236
+#define SE16                          237
+#define SE20                          238
+#define SE27                          239
+#define SE29                          240
+#define LCDPS                         241
+#define LP                            242
+#define LP0                           243
+#define LP1                           244
+#define LP2                           245
+#define LP3                           246
+#define LCDCON                        247
+#define LMUX0                         248
+#define LMUX                          249
+#define LMUX1                         250
+#define CS                            251
+#define CS0                           252
+#define CS1                           253
+#define VGEN                          254
+#define SLPEN                         255
+#define LCDEN                         256
+#define LCDD00                        257
+#define LCDD00_SEG00                  258
+#define LCDD00_SEG01                  259
+#define LCDD00_SEG02                  260
+#define LCDD00_SEG03                  261
+#define LCDD00_SEG04                  262
+#define LCDD00_SEG05                  263
+#define LCDD00_SEG06                  264
+#define LCDD00_SEG07                  265
+#define LCDD01                        266
+#define LCDD01_SEG08                  267
+#define LCDD01_SEG09                  268
+#define LCDD01_SEG10                  269
+#define LCDD01_SEG11                  270
+#define LCDD01_SEG12                  271
+#define LCDD01_SEG13                  272
+#define LCDD01_SEG14                  273
+#define LCDD01_SEG15                  274
+#define LCDD02                        275
+#define LCDD02_SEG16                  276
+#define LCDD02_SEG17                  277
+#define LCDD02_SEG18                  278
+#define LCDD02_SEG19                  279
+#define LCDD02_SEG20                  280
+#define LCDD02_SEG21                  281
+#define LCDD02_SEG22                  282
+#define LCDD02_SEG23                  283
+#define LCDD03                        284
+#define LCDD03_SEG24                  285
+#define LCDD03_SEG25                  286
+#define LCDD03_SEG26                  287
+#define LCDD03_SEG27                  288
+#define LCDD03_SEG28                  289
+#define LCDD03_SEG29                  290
+#define LCDD03_SEG30                  291
+#define LCDD03_SEG31                  292
+#define LCDD04                        293
+#define LCDD04_SEG00                  294
+#define LCDD04_SEG01                  295
+#define LCDD04_SEG02                  296
+#define LCDD04_SEG03                  297
+#define LCDD04_SEG04                  298
+#define LCDD04_SEG05                  299
+#define LCDD04_SEG06                  300
+#define LCDD04_SEG07                  301
+#define LCDD05                        302
+#define LCDD05_SEG08                  303
+#define LCDD05_SEG09                  304
+#define LCDD05_SEG10                  305
+#define LCDD05_SEG11                  306
+#define LCDD05_SEG12                  307
+#define LCDD05_SEG13                  308
+#define LCDD05_SEG14                  309
+#define LCDD05_SEG15                  310
+#define LCDD06                        311
+#define LCDD06_SEG16                  312
+#define LCDD06_SEG17                  313
+#define LCDD06_SEG18                  314
+#define LCDD06_SEG19                  315
+#define LCDD06_SEG20                  316
+#define LCDD06_SEG21                  317
+#define LCDD06_SEG22                  318
+#define LCDD06_SEG23                  319
+#define LCDD07                        320
+#define LCDD07_SEG24                  321
+#define LCDD07_SEG25                  322
+#define LCDD07_SEG26                  323
+#define LCDD07_SEG27                  324
+#define LCDD07_SEG28                  325
+#define LCDD07_SEG29                  326
+#define LCDD07_SEG30                  327
+#define LCDD07_SEG31                  328
+#define LCDD08                        329
+#define LCDD08_SEG00                  330
+#define LCDD08_SEG01                  331
+#define LCDD08_SEG02                  332
+#define LCDD08_SEG03                  333
+#define LCDD08_SEG04                  334
+#define LCDD08_SEG05                  335
+#define LCDD08_SEG06                  336
+#define LCDD08_SEG07                  337
+#define LCDD09                        338
+#define LCDD09_SEG08                  339
+#define LCDD09_SEG09                  340
+#define LCDD09_SEG10                  341
+#define LCDD09_SEG11                  342
+#define LCDD09_SEG12                  343
+#define LCDD09_SEG13                  344
+#define LCDD09_SEG14                  345
+#define LCDD09_SEG15                  346
+#define LCDD10                        347
+#define LCDD10_SEG16                  348
+#define LCDD10_SEG17                  349
+#define LCDD10_SEG18                  350
+#define LCDD10_SEG19                  351
+#define LCDD10_SEG20                  352
+#define LCDD10_SEG21                  353
+#define LCDD10_SEG22                  354
+#define LCDD10_SEG23                  355
+#define LCDD11                        356
+#define LCDD11_SEG24                  357
+#define LCDD11_SEG25                  358
+#define LCDD11_SEG26                  359
+#define LCDD11_SEG27                  360
+#define LCDD11_SEG28                  361
+#define LCDD11_SEG29                  362
+#define LCDD11_SEG30                  363
+#define LCDD11_SEG31                  364
+#define LCDD12                        365
+#define LCDD12_SEG00                  366
+#define LCDD12_SEG01                  367
+#define LCDD12_SEG02                  368
+#define LCDD12_SEG03                  369
+#define LCDD12_SEG04                  370
+#define LCDD12_SEG05                  371
+#define LCDD12_SEG06                  372
+#define LCDD12_SEG07                  373
+#define LCDD13                        374
+#define LCDD13_SEG08                  375
+#define LCDD13_SEG09                  376
+#define LCDD13_SEG10                  377
+#define LCDD13_SEG11                  378
+#define LCDD13_SEG12                  379
+#define LCDD13_SEG13                  380
+#define LCDD13_SEG14                  381
+#define LCDD13_SEG15                  382
+#define LCDD14                        383
+#define LCDD14_SEG16                  384
+#define LCDD14_SEG17                  385
+#define LCDD14_SEG18                  386
+#define LCDD14_SEG19                  387
+#define LCDD14_SEG20                  388
+#define LCDD14_SEG21                  389
+#define LCDD14_SEG22                  390
+#define LCDD14_SEG23                  391
+#define LCDD15                        392
+#define LCDD15_SEG24                  393
+#define LCDD15_SEG25                  394
+#define LCDD15_SEG26                  395
+#define LCDD15_SEG27                  396
+#define LCDD15_SEG28                  397
+#define LCDD15_SEG29                  398
+#define LCDD15_SEG30                  399
+#define LCDD15_SEG31                  400
+#define TRISF                         401
+#define TRISF0                        402
+#define TRISF1                        403
+#define TRISF2                        404
+#define TRISF3                        405
+#define TRISF4                        406
+#define TRISF5                        407
+#define TRISF6                        408
+#define TRISF7                        409
+#define TRISG                         410
+#define TRISG0                        411
+#define TRISG1                        412
+#define TRISG2                        413
+#define TRISG3                        414
+#define TRISG4                        415
+#define TRISG5                        416
+#define TRISG6                        417
+#define TRISG7                        418
+
+#endif // _PIC16C924_H_
